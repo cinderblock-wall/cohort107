@@ -1,0 +1,150 @@
+html {
+    background-color: rgb(249, 245, 14);
+}
+
+.maincontainer {
+    display: flex;
+}
+
+.section1 {
+    display: flex;
+    flex: 50%;
+    /* width: 55vw; */
+    height: 140px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.box1 {
+    /* position: relative; */
+    margin: 0;
+}
+.box2 {
+    position: relative;
+    left: 50px;
+    /* width: 70%; */
+    margin: 0;
+    text-wrap: none;
+}
+
+.section2 {
+    display: flex;
+    /* position: absolute; */
+    top: 0;
+    left: 59.5%;
+    /* width: 32vw; */
+    height: 140px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.section3 {
+    display: flex;
+    /* position: relative; */
+    width: auto;
+    margin: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+
+.section4 {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+#box1 {
+    width: 70%;
+
+}
+
+#box2 {
+    position: relative;
+    left: 2%;
+}
+
+ul {
+    list-style: none; /* remove default bullets */
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(74, 109, 82);
+}
+ul li::before {
+    content: "\2022"; /* add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(127, 189, 34);
+    position: absolute;
+    left: 3px;
+    font-size: x-large;
+
+    /* diferent way to do the spacing below */
+    /* display: inline-block; needed to add space between the bullet and the text */
+    /* width: 1em; also needed for space (tweak if needed) */
+    /* margin-left: -1em; also needed for space */
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: rgb(226, 88, 46);
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: rgba(133, 34, 34, 0.863)  */
+    color: green;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(226, 88, 46);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left; 
+    color: rgb(74, 109, 82);
+}
+
+#obj {
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+      background-color: rebeccapurple;
+    }
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .section4 {
+        flex-direction: column;
+      /* flex: 50%; */
+      /* max-width: 50%; */
+      /* background-color: rebeccapurple; */
+    }
+    .maincontainer {
+        flex-direction: column;
+    }
+    .section2 {
+        width: auto;
+    }
+    .section1 {
+        width: auto;
+    }
+  }

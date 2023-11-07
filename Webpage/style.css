@@ -1,0 +1,93 @@
+html {
+  background-color: rgb(242, 232, 253);
+ 
+}
+
+header { 
+  text-align: center;
+  
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(247, 243, 251); 
+  border: #fcfcfc;
+  border-radius: 10px;
+
+}
+li {
+  float: left;
+  border-right: none;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #fcfcfc;
+}
+.active {
+  background-color: white;
+}
+
+.login {
+  height: 1em;
+  margin-right: 0.5em;
+  vertical-align: bottom;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+  width: 25vw;
+  height: 60vh;
+  position: relative; left: 30%;
+  border-radius: 20px;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 95%;
+}
+
+.image2 {
+  position: relative;
+  color: aqua; 
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 105%;
+  background-color: rgb(242, 232, 253);
+}
+
+select {
+  border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 110%;
+  background-color: #eee;
+  color: grey;
+}
